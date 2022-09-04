@@ -166,7 +166,12 @@
         }
 
         .max-w-6xl {
-            max-width: 72rem
+            max-width: 72rem;
+            font-size:20px;
+            text-transform:uppercase;
+            border-bottom: 2px solid;
+            padding: 12px 0;
+            color: #182c52;
         }
 
         .min-h-screen {
@@ -281,7 +286,12 @@
         .w-auto {
             width: auto
         }
+        footer{
 
+            background: #eee;
+            padding: 20px;
+            text-align: center;
+        }
         .grid-cols-1 {
             grid-template-columns:repeat(1, minmax(0, 1fr))
         }
@@ -401,6 +411,8 @@
 </head>
 <body class="antialiased">
     @yield('content')
-
+    <footer>
+        Copyrighte 2022 Pizza-kade
+    </footer>
 </body>
 </html>

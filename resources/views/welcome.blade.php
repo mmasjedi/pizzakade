@@ -1,4 +1,4 @@
-@extends('layouts.layout');
+@extends('layouts.layout')
 
 
 @section('content')
@@ -21,8 +21,10 @@
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <img src="img/pizza-kade.png" alt="">
             <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+                <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+                    <h1>The Tehran`s Best Pizzas  </h1>
 
-                <b> Hello word </b>
+                </div>
 
             </div>
 
