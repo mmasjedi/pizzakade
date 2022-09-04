@@ -29,20 +29,12 @@
             </svg>
         </div>
         <br><br>
-        <b> Hello word </b>
+        <b> Pizza List </b>
 
 
-        {{--        <b>  {{$type}} {{$crust}} {{$price}} </b>--}}
-        <br><br>
-        {{--        @if($price > 50 )--}}
-        {{--            <b> Price is very high</b>--}}
-        {{--        @elseif($price == 50)--}}
-        {{--            <b> Price is middle</b>--}}
-        {{--        @else--}}
-        {{--            <b> Price is low</b>--}}
         @for($i=0; $i<count($keyname) ; $i++)
 
-            <p> {{ $keyname[$i]['type'] }} ------ {{ $keyname[$i]['crust'] }} ------ {{ $keyname[$i]['price'] }} </p>
+            <p> {{ $keyname[$i]['type'] }} ------ {{ $keyname[$i]['crust'] }} ---{{ $keyname[$i]['price'] }} </p>
 
         @endfor
 
@@ -50,7 +42,8 @@
             <p>    {{ $y['type'] }}----{{ $y['crust'] }}----{{ $y['price'] }}   </p>
         @endforeach
 
-
+        <p>{{$name}}</p>
+        <p>{{$age}}</p>
     </div>
 </div>
 @endsection
