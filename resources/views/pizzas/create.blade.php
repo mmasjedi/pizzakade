@@ -29,21 +29,10 @@
             </svg>
         </div>
         <br><br>
-        <b> Pizza List </b>
+        <b> Add a New Pizza </b>
 
 
-        @for($i=0; $i<count($keyname) ; $i++)
 
-            <p> {{ $keyname[$i]['type'] }} ------ {{ $keyname[$i]['crust'] }} ---{{ $keyname[$i]['price'] }} </p>
-
-        @endfor
-
-        @foreach($keyname as $y)
-            <p>    {{ $y['type'] }}----{{ $y['crust'] }}----{{ $y['price'] }}   </p>
-        @endforeach
-
-        <p>{{$name}}</p>
-        <p>{{$age}}</p>
     </div>
 </div>
 @endsection
