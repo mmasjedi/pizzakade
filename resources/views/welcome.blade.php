@@ -29,7 +29,7 @@
 
             </form>
           <br>
-            <form action="/pizzas" method="get">
+            <form action="{{ route('pizzas.create') }}" method="get">
                 <input type="submit" value="List of order">
             </form>
         </div>
