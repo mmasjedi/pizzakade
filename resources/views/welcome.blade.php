@@ -23,11 +23,15 @@
                 The Tehran's Best Pizzas
             </div>
             <p class="mssg">{{ session('mssg') }}</p>
-            <a href="/pizzas/create">Order a Pizza--></a>
-            <br />
-            <br />
-            <br />
-            <a href="/pizzas">List Orders--></a>
+            <form action="/pizzas/create" method="get">
+                
+                <input type="submit" value="Create a new pizza">
+
+            </form>
+          <br>
+            <form action="/pizzas" method="get">
+                <input type="submit" value="List of order">
+            </form>
         </div>
     </div>
 @endsection

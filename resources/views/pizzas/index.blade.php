@@ -1,12 +1,15 @@
-@extends('layouts.layout');
+@extends('layouts.app')
 
 
 @section('content')
 
 <div class="wrapper pizza-index">
-    <h1>Pizza Orders <a class="tab" href="/pizzas/create">Create a New Pizza
- > </a>
-
+    <h1>Pizza Orders</h1> 
+    <form action="/" method="get">
+        <input type="submit" value="Back"  >
+    </form>
+    <br />
+    <br />
     @foreach($keyname as $y)
         <div class="pizza-item">
             <img src="/img/pizza.png" alt="">

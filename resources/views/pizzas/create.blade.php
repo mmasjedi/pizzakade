@@ -1,6 +1,4 @@
-@extends('layouts.layout');
-
-
+@extends('layouts.app')
 @section('content')
 <div class="wrapper create-pizza">
     <h1>Create a New Pizza</h1>
@@ -9,10 +7,8 @@
         <!-- name -->
         <label for="name">Your Name:</label>
         <input type="text" name="name" id="name" required>
-
-
         <!-- type -->
-        <label for="type">Choose Type Of Pizza:</label>
+        <label for="type">Choose type Of Pizza:</label>
         <select name="type" id="type">
             <option value="margarita">Margarita</option>
             <option value="vegtable">Vegtable</option>
@@ -24,10 +20,8 @@
             <option value="chicke">chicke</option>
             <option value="neaplitan">neaplitan</option>
         </select>
-
-
         <!-- base -->
-        <label for="type">Choose crust:</label>
+        <label for="base">Choose crust:</label>
         <select name="base" id="base">
             <option value="thick">Thick</option>
             <option value="thin">Thin</option>
@@ -40,12 +34,11 @@
 
         <!-- toppings -->
         <br />
-        <br />
         <fieldset>
             <lable>Extra Toppings:</lable>
             <br />
-            <br />
-{{--                        Chon besoorat jeyson va araye toopings ersal mishe bayad dar [] bashad--}}
+            
+{{--    Chon besoorat jeyson va araye toopings ersal mishe bayad dar [] bashad--}}
             <input type="checkbox" name="toppings[]" value="mushroom">Mushroom<br />
             <input type="checkbox" name="toppings[]" value="garlic">Garlic<br />
             <input type="checkbox" name="toppings[]" value="cheese">Cheese<br />
@@ -56,9 +49,8 @@
 
         <!-- submit -->
         <input type="submit" value="Order Pizza">
+        
     </form>
-    <form action="/pizzas" method="get">  
-    <input type="submit" value="back">
-    </form>
+    <form action="/" method="get">  <input type="submit" value="back"> </form>
 </div>
 @endsection

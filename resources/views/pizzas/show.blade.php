@@ -1,25 +1,25 @@
-@extends('layouts.layout');
+@extends('layouts.app')
 
 
 @section('content')
     <div class="wrapper pizza-details">
-        <h1> Order For {{ $pizzaview->name}}</h1>
-        <p class="type"> Type - {{ $pizzaview->type }}</p>
-        <p class="Base"> Base - {{ $pizzaview->base }}</p>
-        <p class="toppings">Extra Toppings: </p>
+        <p style="color:peru;">Name: <h style="color:indigo;">{{$pizzaview->name}}</h></p>
+        <p style="color:peru;" class="type"> Type : <h style="color:indigo;">{{ $pizzaview->type }}</h></p>
+        <p style="color:peru;" class="Base"> Base : <h style="color:indigo;">{{ $pizzaview->base }}</h></p>
+        <p style="color:peru;" class="toppings">Extra Toppings: </p>
         <ul>
             @foreach($pizzaview->toppings as $g)
-                <li>{{ $g }}</li>
+                <li style="color:peru;">{{ $g }}</li>
             @endforeach
         </ul>
         <form action="/pizzas/{{$pizzaview->id}}" method="POST">
             @csrf
             @method('DELETE')
-            <button>Delete & Complite Order</button>
+            <button>Complete & Archive Order</button>
         </form>
         <form action="/pizzas/" method="GET">
-            <button>Back To Home</button>
+            <button>Back</button>
         </form>
     </div>
-    <a class="a-link-color" href="/pizzas" class="back"><- Back to All Pizzas</a>
+    
 @endsection
