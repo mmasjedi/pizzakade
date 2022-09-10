@@ -69,8 +69,8 @@ footer {
 
 .wrapper {
     max-width: 1140px;
-    padding: 10px;
-    margin: 20px auto;
+    padding: 5px;
+    margin: 10px auto;
 }
 
 /* create pizza form */
@@ -137,27 +137,38 @@ a.back {
 /* pizza index page */
 
 .pizza-index h1 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .pizza-index .pizza-item {
-    margin: 10px 0;
-    padding: 12px;
-    background: #f4f4f4;
+    height: 80px;
+    margin: 5px 0;
+    padding: 0px;
+    background: rgb(127, 124, 124);
+    text-align: left;
+
 }
 
+
+
 .pizza-index .pizza-item img {
-    width: 60px;
+    width: 50px;
     display: inline-block;
 }
 
-.pizza-index .pizza-item h4 {
+.pizza-index .pizza-item p {
     display: inline-block;
     font-weight: normal;
     margin-left: 20px;
+
 }
 
-.pizza-index .pizza-item h4 a {
-    color: #777;
+.pizza-index .pizza-item p a {
+    color: rgb(239, 236, 236);
     text-decoration: none !important;
+    
 }
+.pizza-index .pizza-item a:hover {
+    color: blue;
+}
+ 

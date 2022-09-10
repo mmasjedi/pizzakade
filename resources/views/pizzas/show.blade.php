@@ -17,6 +17,9 @@
             @method('DELETE')
             <button>Delete & Complite Order</button>
         </form>
+        <form action="/pizzas/" method="GET">
+            <button>Back To Home</button>
+        </form>
     </div>
     <a class="a-link-color" href="/pizzas" class="back"><- Back to All Pizzas</a>
 @endsection

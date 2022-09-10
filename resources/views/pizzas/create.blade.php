@@ -57,5 +57,8 @@
         <!-- submit -->
         <input type="submit" value="Order Pizza">
     </form>
+    <form action="/pizzas" method="get">  
+    <input type="submit" value="back">
+    </form>
 </div>
 @endsection

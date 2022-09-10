@@ -4,12 +4,13 @@
 @section('content')
 
 <div class="wrapper pizza-index">
-    <h1>Pizza Orders <a class="tab" href="/pizzas/create">Home > </a>
+    <h1>Pizza Orders <a class="tab" href="/pizzas/create">Create a New Pizza
+ > </a>
 
     @foreach($keyname as $y)
         <div class="pizza-item">
             <img src="/img/pizza.png" alt="">
-            <h4><a class="a-link-color " href="/pizzas/{{$y->id}}">{{ $y->name }}</a> </h4>
+            <p><a class="pizza-item" href="/pizzas/{{$y->id}}">{{ $y->name }}</a></p>
         </div>
     @endforeach
 </div>
