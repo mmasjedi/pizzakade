@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/pizzas',[PizzaController::class, 'index'])->middleware('auth');
+Route::get('/pizzas',[PizzaController::class, 'index'])->middleware('auth')->name('pizzas.index');
 Route::get('/pizzas/create',[PizzaController::class,'create'])->name('pizzas.create');
 Route::post('/pizzas',[PizzaController::class, 'store']);
 Route::get('/pizzas/{id}',[PizzaController::class,'show'])->middleware('auth');
